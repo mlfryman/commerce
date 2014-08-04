@@ -11,21 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nss-cohort-2014-06-07/commerce"
+    "url": "https://github.com/mlfryman/commerce"
   },
-  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "author": "Melanie Fryman <melanie@frymanet.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nss-cohort-2014-06-07/commerce/issues"
+    "url": "https://github.com/mlfryman/commerce/issues"
   },
-  "homepage": "https://github.com/nss-cohort-2014-06-07/commerce",
+  "homepage": "https://github.com/mlfryman/commerce",
   "dependencies": {
     "body-parser": "^1.5.2",
-    "express": "^4.7.2",
+    "express": "^4.7.3",
     "jade": "^1.5.0",
     "lodash": "^2.4.1",
     "mongodb": "^1.4.8",
-    "morgan": "^1.2.2"
+    "morgan": "^1.2.2",
+    "supervisor": "^0.6.0"
   },
   "devDependencies": {
     "blanket": "^1.1.6",

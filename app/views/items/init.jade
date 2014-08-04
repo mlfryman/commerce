@@ -11,6 +11,11 @@ html
         li: a(href='/') Home
         li: a(href='/about') About
         li: a(href='/faq') Faq
+        li: a(href='/items/new') New Items
+        li: a(href='/items') Create Items
+        li: a(href='/items') Index
+        li: a(href='/items/:id') Show
+        li: a(href='/items/:id/delete') Destroy
 
     form(method='post', action='/items')
       input(name='name', type='text', placeholder='iPad', autofocus=true)
@@ -23,4 +28,3 @@ html
       input(name='msrp', type='number', placeholder='msrp')
       input(name='percentOff', type='number', placeholder='percentOff')
       button Add Item to Database
-

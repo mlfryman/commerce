@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title eCommerce
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 eCommerce
+    nav
+      ul
+        li: a(href='/') Home
+        li: a(href='/about') About
+        li: a(href='/faq') Faq
+        li: a(href='/items/new') New Items
+        li: a(href='/items') Create Items
+        li: a(href='/items') Index
+        li: a(href='/items/:id') Show
+        li: a(href='/items/:id/delete') Destroy
+
+     table
+       thead
+         tr 
+           th Name
+           th Length
+           th Width
+           th Height
+           th Weight
+           th Color
+           th Quantity
+           th Quantity
+           th MSRP
+           th Percent Off
+           th Cost
+       tbody
+
+       each item in items
+          td: a(href='/items/#{item._id}')= item.name
+          td #{item.dimensions.l}
+          td #{item.dimensions.w}
+          td #{item.dimensions.h}
+          td #{item.weight}
+          td #{item.color}
+          td #{item.quantity}
+          td #{item.msrp}
+          td #{item.percentOff}
+          td #{item.cost()}

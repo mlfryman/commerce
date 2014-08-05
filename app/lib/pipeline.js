@@ -15,10 +15,10 @@ module.exports = function(app, express){
   app.get('/faq', home.faq);
 
   app.get('/items/new', items.init);
-  app.post('/items', items.create);
-  app.get('/items', items.index);
   app.get('/items/:id', items.show);
   app.post('/items/:id/delete', items.destroy);
+  app.get('/items', items.index);
+  app.post('/items', items.create);
 
   console.log('Pipeline Configured');
 };

@@ -33,7 +33,6 @@ Item
 $ npm install
 $ npm test
 ```
-
 ### Contributors
 - [Melanie Fryman](https://github.com/mlfryman)
 

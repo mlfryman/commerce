@@ -44,6 +44,10 @@ h1 {
   color: #F4F1E3;
 }
 
+h2 {
+  text-align: center;
+}
+
 .wrapper {
   width: 80%;
   text-align: center;

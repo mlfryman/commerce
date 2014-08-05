@@ -1,5 +1,6 @@
 eCommerce Warehouse
 ========
+### Badges
 [![Build Status](https://travis-ci.org/mlfryman/commerce.svg)](https://travis-ci.org/mlfryman/commerce)
 [![Coverage Status](https://coveralls.io/repos/mlfryman/commerce/badge.png)](https://coveralls.io/r/mlfryman/commerce)
 

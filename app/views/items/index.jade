@@ -1,30 +1,20 @@
-doctype html
-html
-  head
-    title
-    link(rel='stylesheet', href='/css/style.css')
-  body
-    h1 eCommerce Warehouse
-    nav
-      ul
-        li: a(href='/') Home
-        li: a(href='/about') About
-        li: a(href='/faq') FAQ
-        li: a(href='/items/new') Add Item
-        li: a(href='/items') View Current Items
+extends ../shared/template
+
+block content
   .wrapper
     h2 Inventory List
     table
+      thead
         tr
-        th Name
-        th Dimensions
-        th Weight
-        th Color
-        th Quantity
-        th MSRP
-        th Sale %
-        th Cost
-  
+          th Name
+          th Dimensions
+          th Weight
+          th Color
+          th Quantity
+          th MSRP
+          th Sale %
+          th Cost
+      tbody
         each item in items
           tr(style='background-color:#{item.color}')
             td: a(href='/items/#{item._id}')= item.name

@@ -1,47 +1,35 @@
-doctype html
-html
-  head
-    meta(charset-"UTF-8")
-    title
-    link(rel='stylesheet', href='/css/style.css')
-  body
-    h1 eCommerce Warehouse
-    nav
-      ul
-        li: a(href='/') Home
-        li: a(href='/about') About
-        li: a(href='/faq') FAQ
-        li: a(href='/items/new') Add Item
-        li: a(href='/items') View Current Items
-    .wrapper
-      .forms
-      h2 Add New Item
-      form(method='post', action='/items')
-        label Name: 
-        input(name='name', type='text', placeholder='iphone', autofocus=true)
-        br
-        label Length (ft): 
-        input(name='dimensions[l]', type='number', placeholder='5')
-        br
-        label Width (ft): 
-        input(name='dimensions[w]', type='number', placeholder='10')
-        br
-        label Height (ft): 
-        input(name='dimensions[h]', type='number', placeholder='7')
-        br
-        label Weight (lbs): 
-        input(name='weight', type='number', placeholder='100')
-        br
-        label Color: 
-        input(name='color', type='color')
-        br
-        label Quantity: 
-        input(name='quantity', type='number', placeholder='2')
-        br
-        label MSRP: 
-        input(name='msrp', type='number', placeholder='499.99')
-        br
-        label Percent Off: 
-        input(name='percentOff', type='number', placeholder='20')
-        br
-        button Add
+extends ../shared/template
+
+block content
+  .wrapper
+    .forms
+    h2 Add New Item
+    form(method='post', action='/items')
+      label Name: 
+      input(name='name', type='text', placeholder='iphone', autofocus=true)
+      br
+      label Length (ft): 
+      input(name='dimensions[l]', type='number', placeholder='5')
+      br
+      label Width (ft): 
+      input(name='dimensions[w]', type='number', placeholder='10')
+      br
+      label Height (ft): 
+      input(name='dimensions[h]', type='number', placeholder='7')
+      br
+      label Weight (lbs): 
+      input(name='weight', type='number', placeholder='100')
+      br
+      label Color: 
+      input(name='color', type='color')
+      br
+      label Quantity: 
+      input(name='quantity', type='number', placeholder='2')
+      br
+      label MSRP: 
+      input(name='msrp', type='number', placeholder='499.99')
+      br
+      label Sale %: 
+      input(name='percentOff', type='number', placeholder='20')
+      br
+      button Add Item
